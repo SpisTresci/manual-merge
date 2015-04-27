@@ -13,6 +13,11 @@ describe('AppController', function () {
         it('should pass a dummy test', inject(function () {
             expect(AppCtrl).toBeTruthy();
         }));
+
+        it("should check whether Merge is default page", inject(function ($urlRouter) {
+            $scope.$emit("$locationChangeSuccess");
+            expect($location.path()).toBe("/merge");
+        }));
     });
 });
 
