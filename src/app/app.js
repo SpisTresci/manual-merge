@@ -11,6 +11,7 @@
     });
 
 }(angular.module("manual-merge", [
+    'manual-merge.merge',
     'manual-merge.home',
     'manual-merge.about',
     'templates-app',
