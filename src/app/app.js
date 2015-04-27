@@ -1,7 +1,7 @@
 (function(app) {
 
     app.config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/merge');
     });
 
     app.run(function () {});
