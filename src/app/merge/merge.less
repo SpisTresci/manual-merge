@@ -8,8 +8,15 @@
     border-style: solid;
     border-color: #e7e7e7;
     border-width: 5px;
-    margin-top: 2px;
     background-color: #f8f8f8;
+
+    &.down {
+      border-bottom-style: none;
+    }
+
+    &.up {
+      border-top-style: none;
+    }
 
     img {
       display: block;
@@ -26,7 +33,6 @@
 
   .merge_panel {
     display: flex;
-    margin-top: 2px;
     height: 60px;
 
     button {
@@ -39,17 +45,17 @@
         height: 40px;
       }
 
-      &#ask {
+      &.ask {
         background-color: #4098f3;
         border-color: #268bf3;
       }
 
-      &#yes {
+      &.yes {
         background-color: #27a93c;
         border-color: #15b12e;
       }
 
-      &#no {
+      &.no {
         background-color: #d71c1c;
         border-color: #d11515;
       }
