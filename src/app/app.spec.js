@@ -16,7 +16,7 @@ describe('AppController', function () {
 
         it("should check whether Merge is default page", inject(function ($urlRouter) {
             $scope.$emit("$locationChangeSuccess");
-            expect($location.path()).toBe("/merge");
+            expect($location.path()).toBe("/home");
         }));
     });
 });
