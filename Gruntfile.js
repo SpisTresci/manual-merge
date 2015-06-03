@@ -648,6 +648,13 @@ module.exports = function(grunt) {
         'karma:continuous'
     ]);
 
+    grunt.registerTask('build_prod', [
+        'clean:all', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
+        'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
+        'copy:build_appjs', 'copy:build_vendorjs', 'ngAnnotate:build', 'index:build',
+        'less:compile', 'copy:compile_assets', 'concat:compile_js', 'index:compile'
+    ]);
+
     // The 'compile' task gets your app ready for deployment by concatenating and minifying your code.
     // Note - compile builds off of the build dir (look at concat:compile_js), so run grunt build before grunt compile
     grunt.registerTask('compile', [
