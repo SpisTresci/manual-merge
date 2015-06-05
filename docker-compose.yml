@@ -1,0 +1,7 @@
+web:
+  image: spistresci/manual-merge
+  ports:
+    - "80"
+  environment:
+    - VIRTUAL_HOST=manual-merge.spistresci.pl
+    - VIRTUAL_PORT=80
