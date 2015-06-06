@@ -1,0 +1,64 @@
+.main_merge {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+
+  .book_area {
+    display: flex;
+    border-style: solid;
+    border-color: #e7e7e7;
+    border-width: 5px;
+    background-color: #f8f8f8;
+
+    &.down {
+      border-bottom-style: none;
+    }
+
+    &.up {
+      border-top-style: none;
+    }
+
+    img {
+      display: block;
+      padding: 5px;
+      max-width: 140px;
+      max-height: 230px;
+    }
+
+    .book_data {
+      display: block;
+      max-width: 48%;
+    }
+  }
+
+  .merge_panel {
+    display: flex;
+    height: 60px;
+
+    button {
+      width: 34%;
+      border-radius: 3px;
+      border-style: outset;
+      border-width: 3px;
+
+      img {
+        height: 40px;
+      }
+
+      &.ask {
+        background-color: #4098f3;
+        border-color: #268bf3;
+      }
+
+      &.yes {
+        background-color: #27a93c;
+        border-color: #15b12e;
+      }
+
+      &.no {
+        background-color: #d71c1c;
+        border-color: #d11515;
+      }
+    }
+  }
+}
