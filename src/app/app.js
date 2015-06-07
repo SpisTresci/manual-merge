@@ -4,6 +4,10 @@
         $urlRouterProvider.otherwise('/merge');
     });
 
+    app.config(function(RestangularProvider) {
+        RestangularProvider.setBaseUrl('http://demo0236750.mockable.io/api/v1');
+    });
+
     app.run(function () {});
 
     app.controller('AppController', function ($scope) {
@@ -18,4 +22,5 @@
     'templates-common',
     'ui.router.state',
     'ui.router',
+    'restangular'
 ])));

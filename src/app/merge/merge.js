@@ -1,6 +1,6 @@
 (function(app) {
 
-    app.controller('MergeController', function ($scope) {
+    app.controller('MergeController', function ($scope, Restangular) {
         var model = this;
 
         init();
