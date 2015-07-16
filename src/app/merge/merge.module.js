@@ -14,5 +14,6 @@
     });
 
 }(angular.module("manual-merge.merge", [
-    'ui.router'
+    'ui.router',
+    "restangular"
 ])));
